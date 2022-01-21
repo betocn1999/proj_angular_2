@@ -1,4 +1,14 @@
 <div>
     <li>Meu nome {{cep|json}}</li>  
     <input [(ngModel)]="name" type="text" placeholder="name"/>
+    <br/>
+    <li>POST</li>
+    <br/>
+    <input type="text" [(ngModel)]="post.title" placeholder="title">
+    <br/>
+    <input type="text" [(ngModel)]="post.body" placeholder="body">
+    <br/>
+    <input type="text" [(ngModel)]="post.userId" placeholder="userId">
+    <br/>
+    <button style="color: black;" (click)="PostData(post)">post</button>
 </div>
